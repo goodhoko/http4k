@@ -39,6 +39,6 @@ fun Family(): ContractRoute {
         description = "Given a name, returns a sub family tree starting with that person"
         tags += Tag("query")
         returning(OK, responseLens to Person("Donald", Age(52), listOf(Person("Don Jr", Age(21)))), "Cut down family tree")
-        returning(NOT_FOUND to "That person does not exist the family")
+        returning(NOT_FOUND to "That person does not exist in the family")
     } bindContract GET to ::handler
 }
