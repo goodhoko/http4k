@@ -1,5 +1,6 @@
 package guide.modules.aws
 
+import java.util.UUID
 import org.http4k.aws.AwsCredentialScope
 import org.http4k.aws.AwsCredentials
 import org.http4k.client.ApacheClient
@@ -10,7 +11,6 @@ import org.http4k.core.Uri
 import org.http4k.core.then
 import org.http4k.filter.AwsAuth
 import org.http4k.filter.ClientFilters
-import java.util.UUID
 
 fun main() {
 

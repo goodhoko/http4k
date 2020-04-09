@@ -1,5 +1,6 @@
 package guide.modules.clients
 
+import kotlin.concurrent.thread
 import org.apache.http.client.config.CookieSpecs
 import org.apache.http.client.config.RequestConfig
 import org.apache.http.impl.client.HttpClients
@@ -8,7 +9,6 @@ import org.http4k.client.ApacheClient
 import org.http4k.core.BodyMode
 import org.http4k.core.Method.GET
 import org.http4k.core.Request
-import kotlin.concurrent.thread
 
 fun main() {
 
@@ -49,4 +49,3 @@ fun main() {
             .build()).build()
     )
 }
-

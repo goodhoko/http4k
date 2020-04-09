@@ -1,5 +1,6 @@
 package cookbook.nanoservices
 
+import java.lang.System.setProperty
 import org.http4k.chaos.ChaosBehaviours.Latency
 import org.http4k.chaos.ChaosEngine
 import org.http4k.chaos.withChaosApi
@@ -12,7 +13,6 @@ import org.http4k.filter.RequestFilters.ProxyHost
 import org.http4k.filter.RequestFilters.ProxyProtocolMode.Https
 import org.http4k.server.SunHttp
 import org.http4k.server.asServer
-import java.lang.System.setProperty
 
 fun `latency injection proxy (between 100ms-500ms)`() =
     ProxyHost(Https)

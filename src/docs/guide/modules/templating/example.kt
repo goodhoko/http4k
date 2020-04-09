@@ -1,5 +1,6 @@
 package guide.modules.templating
 
+import java.io.File
 import org.http4k.core.Body
 import org.http4k.core.ContentType.Companion.TEXT_HTML
 import org.http4k.core.HttpHandler
@@ -11,7 +12,6 @@ import org.http4k.core.with
 import org.http4k.template.HandlebarsTemplates
 import org.http4k.template.ViewModel
 import org.http4k.template.viewModel
-import java.io.File
 
 data class Person(val name: String, val age: Int) : ViewModel
 

@@ -1,5 +1,6 @@
 package cookbook.nanoservices
 
+import java.lang.System.setProperty
 import org.http4k.client.JavaHttpClient
 import org.http4k.core.Method.GET
 import org.http4k.core.Request
@@ -9,7 +10,6 @@ import org.http4k.filter.RequestFilters.ProxyProtocolMode.Https
 import org.http4k.filter.ResponseFilters.ReportRouteLatency
 import org.http4k.server.SunHttp
 import org.http4k.server.asServer
-import java.lang.System.setProperty
 
 fun `latency reporting proxy`() =
     ProxyHost(Https)

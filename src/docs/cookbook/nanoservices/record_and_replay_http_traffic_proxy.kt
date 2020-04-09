@@ -1,5 +1,6 @@
 package cookbook.nanoservices
 
+import java.lang.System.setProperty
 import org.http4k.client.JavaHttpClient
 import org.http4k.core.Method.GET
 import org.http4k.core.Request
@@ -10,7 +11,6 @@ import org.http4k.filter.TrafficFilters.RecordTo
 import org.http4k.server.SunHttp
 import org.http4k.server.asServer
 import org.http4k.traffic.ReadWriteStream.Companion.Disk
-import java.lang.System.setProperty
 
 fun `recording traffic to disk proxy`() =
     ProxyHost(Https)

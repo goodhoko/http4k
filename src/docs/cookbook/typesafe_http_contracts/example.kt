@@ -1,5 +1,6 @@
 package cookbook.typesafe_http_contracts
 
+import java.time.Clock
 import org.http4k.contract.bind
 import org.http4k.contract.contract
 import org.http4k.contract.div
@@ -33,7 +34,6 @@ import org.http4k.routing.routes
 import org.http4k.routing.static
 import org.http4k.server.Jetty
 import org.http4k.server.asServer
-import java.time.Clock
 
 fun main() {
 

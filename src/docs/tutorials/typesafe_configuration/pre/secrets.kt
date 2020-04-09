@@ -1,9 +1,9 @@
 package tutorials.typesafe_configuration.pre
 
+import java.nio.ByteBuffer
 import org.http4k.client.OkHttp
 import org.http4k.core.Method.GET
 import org.http4k.core.Request
-import java.nio.ByteBuffer
 
 val s3 = OkHttp()
 

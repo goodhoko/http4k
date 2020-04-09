@@ -2,6 +2,8 @@ package cookbook.service_virtualisation.mitm
 
 import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
+import java.io.File
+import java.nio.file.Paths
 import org.http4k.client.ApacheClient
 import org.http4k.core.Credentials
 import org.http4k.core.Method.POST
@@ -27,8 +29,6 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInfo
-import java.io.File
-import java.nio.file.Paths
 
 /**
  * This is our producing app

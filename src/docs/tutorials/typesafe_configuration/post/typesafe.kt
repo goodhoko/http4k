@@ -1,11 +1,11 @@
 package tutorials.typesafe_configuration.post
 
+import java.time.Duration
 import org.http4k.cloudnative.env.Environment
 import org.http4k.cloudnative.env.EnvironmentKey
 import org.http4k.lens.Lens
 import org.http4k.lens.duration
 import org.http4k.lens.int
-import java.time.Duration
 
 data class Timeout(val value: Duration)
 data class Port(val value: Int)

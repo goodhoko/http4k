@@ -2,6 +2,8 @@ package cookbook.service_virtualisation.junit
 
 import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
+import java.io.File
+import java.nio.file.Paths
 import org.http4k.client.ApacheClient
 import org.http4k.core.Credentials
 import org.http4k.core.HttpHandler
@@ -25,8 +27,6 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS
 import org.junit.jupiter.api.extension.RegisterExtension
-import java.io.File
-import java.nio.file.Paths
 
 /**
  * This client wraps the calls to a remote WordCounter service
@@ -142,4 +142,3 @@ class ReplayFromGitHubTest : WordCounterContract {
         )
     )
 }
-

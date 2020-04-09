@@ -1,5 +1,8 @@
 import com.natpryce.Failure
 import com.natpryce.Success
+import java.time.Clock
+import java.time.temporal.ChronoUnit.DAYS
+import java.util.UUID
 import org.http4k.client.OkHttp
 import org.http4k.core.Credentials
 import org.http4k.core.HttpHandler
@@ -32,9 +35,6 @@ import org.http4k.security.oauth.server.UnsupportedGrantType
 import org.http4k.security.oauth.server.accesstoken.AuthorizationCodeAccessTokenRequest
 import org.http4k.server.Jetty
 import org.http4k.server.asServer
-import java.time.Clock
-import java.time.temporal.ChronoUnit.DAYS
-import java.util.UUID
 
 fun main() {
     fun authorizationServer(): RoutingHttpHandler {

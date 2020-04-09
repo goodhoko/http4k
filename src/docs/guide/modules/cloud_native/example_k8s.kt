@@ -1,5 +1,6 @@
 package guide.modules.cloud_native
 
+import kotlin.random.Random
 import org.http4k.client.JavaHttpClient
 import org.http4k.cloudnative.Http4kK8sServer
 import org.http4k.cloudnative.asK8sServer
@@ -24,7 +25,6 @@ import org.http4k.lens.secret
 import org.http4k.routing.bind
 import org.http4k.server.SunHttp
 import org.http4k.server.asServer
-import kotlin.random.Random
 
 // the entire k8s application consists of 2 servers - the main and the health
 object App {

@@ -1,5 +1,6 @@
 package guide.modules.jsonrpc
 
+import java.util.concurrent.atomic.AtomicInteger
 import org.http4k.core.HttpHandler
 import org.http4k.core.Method.POST
 import org.http4k.core.Request
@@ -8,7 +9,6 @@ import org.http4k.format.Json
 import org.http4k.jsonrpc.ErrorHandler
 import org.http4k.jsonrpc.ErrorMessage
 import org.http4k.jsonrpc.JsonRpc
-import java.util.concurrent.atomic.AtomicInteger
 
 class Counter {
     private val value = AtomicInteger()

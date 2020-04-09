@@ -1,5 +1,6 @@
 package cookbook.monitoring
 
+import java.time.Clock
 import org.http4k.core.HttpHandler
 import org.http4k.core.HttpTransaction
 import org.http4k.core.Method.GET
@@ -10,7 +11,6 @@ import org.http4k.core.then
 import org.http4k.filter.ResponseFilters
 import org.http4k.routing.bind
 import org.http4k.routing.routes
-import java.time.Clock
 
 fun main() {
 

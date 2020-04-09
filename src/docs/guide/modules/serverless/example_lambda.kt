@@ -50,5 +50,4 @@ fun main() {
 
     runLambdaLocally()
     runLambdaAsAwsWould()
-
 }

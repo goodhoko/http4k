@@ -1,7 +1,7 @@
 package tutorials.typesafe_configuration.post
 
-import org.http4k.cloudnative.env.Environment
 import java.io.File
+import org.http4k.cloudnative.env.Environment
 
 val systemEnv: Environment = Environment.ENV
 val jvmFlags: Environment = Environment.JVM_PROPERTIES
